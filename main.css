@@ -1,0 +1,69 @@
+/* CSSリセットで基本のスタイルを整えます */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ボディの基本スタイル */
+body {
+    font-family: Arial, sans-serif; /* フォントファミリー */
+    line-height: 1.6; /* 行間を調整 */
+    background-color: #f9f9f9; /* 背景色 */
+    color: #333; /* 文字色 */
+}
+
+/* ヘッダーのスタイル */
+header {
+    background: #007BFF; /* ヘッダーの背景色 */
+    color: white; /* ヘッダーの文字色 */
+    padding: 1rem; /* パディング */
+    text-align: center; /* 中央揃え */
+}
+
+/* メインコンテンツのスタイル */
+main {
+    padding: 1rem; /* パディング */
+}
+
+/* セクションのスタイル */
+section {
+    margin-bottom: 2rem; /* セクション間のマージン */
+}
+
+/* リンクのスタイル */
+a {
+    color: #007BFF; /* リンクの文字色 */
+    text-decoration: none; /* テキストの下線を消す */
+}
+
+a:hover {
+    text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+/* 画像のレスポンシブスタイル */
+.responsive {
+    max-width: 100%; /* 最大幅を100%に */
+    height: auto; /* 高さを自動調整 */
+}
+
+/* フッターのスタイル */
+footer {
+    text-align: center; /* 中央揃え */
+    padding: 1rem; /* パディング */
+    background: #007BFF; /* フッターの背景色 */
+    color: white; /* フッターの文字色 */
+    position: relative; /* フッターの位置を相対的に */
+    bottom: 0; /* フッターを下に寄せる */
+}
+
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 600px) {
+    header, footer {
+        font-size: 1.2rem; /* モバイルではフォントサイズを小さく */
+    }
+    main {
+        padding: 0.5rem; /* モバイルではパディングを小さく */
+    }
+}
+``
